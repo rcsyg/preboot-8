@@ -1,0 +1,3 @@
+Mājas darbs #1:
+
+Aprakstīt 3-4 faktus par sevi, izmantojot dažāda tipa mainīgus (skaitliskus, tekstu, loģisko faktu, utt...), un izdrukāt tos uz ekrāna.
