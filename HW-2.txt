@@ -1,0 +1,7 @@
+Rework HW-1 to get data from user directly (by console input) and then print it out back. E.g. :
+
+-> Enter your name :
+<- Jurijs
+-> Your name : Jurijs
+
+(please ignore -> and <-, it's just to show input / output)
