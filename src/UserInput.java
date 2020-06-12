@@ -22,6 +22,10 @@ public class UserInput {
         boolean userBoolean = sc.nextBoolean();
         System.out.println("userBoolean = " + userBoolean);
 
+        System.out.println("Enter some char:");
+        char userChar = sc.next().charAt(0);
+        System.out.println("userChar = " + userChar);
+
         sc.close();
     }
 
