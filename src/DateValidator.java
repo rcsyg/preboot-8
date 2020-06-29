@@ -16,6 +16,9 @@ public class DateValidator {
 
         sc.close();
 
+        String[] monthNames = new String[] {"January", "February", "March", "April",
+                "May", "June", "July", "August", "September", "October", "November", "December"};
+
         if (date < 1 || month < 1 || month > 12) {
             System.out.println("Incorrect request");
         } else {
@@ -25,10 +28,8 @@ public class DateValidator {
 
             switch (month) {
                 case 1:
-                    monthName = "January";
                     break;
                 case 2:
-                    monthName = "February";
                     if (year % 4 == 0) {
                         maxDaysInMonth = 29;
                     } else {
@@ -36,44 +37,35 @@ public class DateValidator {
                     }
                     break;
                 case 3:
-                    monthName = "March";
                     break;
                 case 4:
-                    monthName = "April";
                     maxDaysInMonth = 30;
                     break;
                 case 5:
-                    monthName = "May";
                     break;
                 case 6:
-                    monthName = "June";
                     maxDaysInMonth = 30;
                     break;
                 case 7:
-                    monthName = "July";
                     break;
                 case 8:
-                    monthName = "August";
                     break;
                 case 9:
-                    monthName = "September";
                     maxDaysInMonth = 30;
                     break;
                 case 10:
-                    monthName = "October";
                     break;
                 case 11:
-                    monthName = "November";
                     maxDaysInMonth = 30;
                     break;
                 case 12:
-                    monthName = "December";
                     break;
             }
 
             if (date > maxDaysInMonth) {
                 System.out.println("Incorrect request");
             } else {
+                monthName = monthNames[month - 1];
                 if (year < 0) {
                     System.out.println(date + ". " + monthName + ", " + (year * -1) + " BC");
                 } else {
