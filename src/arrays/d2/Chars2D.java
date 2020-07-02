@@ -24,6 +24,11 @@ public class Chars2D {
             }
             System.out.println("");
         }
+
+        // Print 2nd column
+        for (int i = 0; i < text.length; i++) {
+            System.out.print(text[i][2]);
+        }
     }
 
 }
