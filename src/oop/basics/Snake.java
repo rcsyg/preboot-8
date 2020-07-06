@@ -9,7 +9,6 @@ public class Snake {
         this.name = name;
         this.age = age;
         System.out.println("Yay!");
-
     }
 
 }
