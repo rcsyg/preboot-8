@@ -1,5 +1,7 @@
 package oop.basics;
 
+import java.util.Random;
+
 public class Cat {
 
     public String name;
@@ -27,6 +29,15 @@ public class Cat {
             return false;
         } else {
             return true;
+        }
+    }
+
+    public void performAction() {
+        int r = new Random().nextInt(2);
+        if (r == 0) {
+            sleep(1, 30);
+        } else {
+            eat("my hand");
         }
     }
 

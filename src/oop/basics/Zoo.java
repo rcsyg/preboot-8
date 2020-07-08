@@ -44,6 +44,8 @@ public class Zoo {
 
         Snake kaa = new Snake("Kaa", 100);
         System.out.println("kaa.name = " + kaa.name);
+
+        prince.performAction();
     }
 
 }
