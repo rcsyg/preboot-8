@@ -25,4 +25,14 @@ public class Matrix3 {
         return determinant;
     }
 
+    public void transpose() {
+        int[][] temp = new int[3][3];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                temp[i][j] = matrix[j][i];
+            }
+        }
+        matrix = temp;
+    }
+
 }

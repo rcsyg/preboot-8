@@ -11,10 +11,20 @@ public class MatrixLauncher {
         Matrix3 matrix3 = new Matrix3(example);
         matrix3.printSelf();
 
+        System.out.println("");
+
         int det = matrix3.calculateDeterminant();
         System.out.println("det = " + det);
 
+        System.out.println("");
 
+        matrix3.transpose();
+        matrix3.printSelf();
+
+        System.out.println("");
+
+        matrix3.transpose();
+        matrix3.printSelf();
     }
 
 }

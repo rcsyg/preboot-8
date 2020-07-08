@@ -13,6 +13,9 @@ public class Geometry {
         double length = ab.length();
         System.out.println("length = " + length);
 
+        Triangle abc = new Triangle(a, b, c);
+        double area = abc.area();
+        System.out.println("area = " + area);
     }
 
 }

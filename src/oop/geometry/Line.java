@@ -28,6 +28,9 @@ public class Line {
     }
 
     public double length() {
-        return 0;
+        double diffX = finish.getX() - start.getX();
+        double diffY = finish.getY() - start.getY();
+        double length = Math.sqrt((diffX * diffX) + (diffY * diffY));
+        return length;
     }
 }
