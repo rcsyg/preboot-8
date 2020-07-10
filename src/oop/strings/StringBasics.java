@@ -45,6 +45,53 @@ public class StringBasics {
         int indexOfCake = text.indexOf("cheesecake");
         System.out.println("indexOfCake = " + indexOfCake);
 
+        // (first) indexOf and lastIndexOf
+        int firstIndexOfO = text.indexOf("o");
+        int lastIndexOfO = text.lastIndexOf("o");
+        System.out.println("firstIndexOfO = " + firstIndexOfO);
+        System.out.println("lastIndexOfO = " + lastIndexOfO);
+
+        // from index till end of origin
+        String subs1 = text.substring(4);
+        System.out.println("subs1 = " + subs1);
+
+        // "cut" from origin from 4 till 19
+        String subs2 = text.substring(4, 19);
+        System.out.println("subs2 = " + subs2);
+
+        String s5 = "   TEXT   ";
+        System.out.print("|");
+        System.out.print(s5);
+        System.out.println("|");
+
+        // Remove leading and trailing whitespaces from origin string
+        s5 = s5.trim();
+        System.out.print("|");
+        System.out.print(s5);
+        System.out.println("|");
+
+        // Splits the original text by divider into array of strings
+        String[] parts = text.split("fox");
+        for (int i = 0; i < parts.length; i++) {
+            String part = parts[i];
+            System.out.println("part = " + part);
+        }
+
+        String[] cats = text.split("cat");
+        if (cats == null) {
+            System.out.println("Null!");
+        } else {
+            System.out.println("Length : " + cats.length);
+            String strangeString = cats[0];
+            System.out.println("strangeString = " + strangeString);
+        }
+
+        String[] normalCats = text.split("cat", -1);
+        if (normalCats == null) {
+            System.out.println("Null!");
+        } else {
+            System.out.println("Length : " + normalCats.length);
+        }
 
     }
 
