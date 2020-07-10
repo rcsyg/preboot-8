@@ -25,4 +25,34 @@ public class AwesomeList {
         }
     }
 
+    public int get(int idx) {
+        if (idx < 0 || idx > index) {
+            throw new IllegalArgumentException("Illegal index!");
+        }
+        return arr[idx];
+    }
+
+    public int size() {
+        return index;
+    }
+
+    public void remove(int idx) {
+        if (idx < 0 || idx > index) {
+            throw new IllegalArgumentException("Illegal index!");
+        }
+
+        for (int i = idx; i < index; i++) {
+            arr[i] = arr[i + 1];
+        }
+        index--;
+    }
+
+    public void addAll(int[] values) {
+        for (int i = 0; i < values.length; i++) {
+            int value = values[i];
+            add(value);
+        }
+    }
+
+
 }

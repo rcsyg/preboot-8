@@ -15,6 +15,24 @@ public class ListLauncher {
         if(false /* in case get by inadequate index */ ) {
             throw new IllegalArgumentException("Illegal index!");
         }
+
+        System.out.println("");
+
+        int valueByIndex = awesomeList.get(3);
+        System.out.println("valueByIndex = " + valueByIndex);
+
+        int currentSize = awesomeList.size();
+        System.out.println("currentSize = " + currentSize);
+
+        awesomeList.remove(1);
+        awesomeList.printSelf();
+
+        System.out.println("");
+
+        int[] arrayToAdd = new int[]{-6, 3, -5, 1, 8, -12};
+        awesomeList.addAll(arrayToAdd);
+
+        awesomeList.printSelf();
     }
 
 }
