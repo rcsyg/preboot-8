@@ -15,7 +15,18 @@ public class StudentMarks {
         // Store calculated results here
         HashMap<String, Double> studentAverages = new HashMap<>();
 
+        for (String studentName : studentMarks.keySet()) {
+            ArrayList<Integer> marks = studentMarks.get(studentName);
 
+            double sum = 0;
+            for (Integer mark : marks) {
+                sum = sum + mark;
+            }
+            double avg = sum / marks.size();
+            studentAverages.put(studentName, avg);
+        }
+
+        System.out.println(studentAverages);
     }
 
 }
