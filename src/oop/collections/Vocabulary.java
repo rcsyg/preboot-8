@@ -8,11 +8,13 @@ public class Vocabulary {
 
     public void addRecord(String key, String value) {
         // put passed key & value to a storage variable
+        storage.put(key, value);
     }
 
     public String getRecordValue(String key) {
         // change return statement to return real value from storage
-        return "";
+        String value = storage.get(key);
+        return value;
     }
 
     public void print() {
