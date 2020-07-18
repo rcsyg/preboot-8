@@ -10,25 +10,25 @@ public class TeamAssigner {
         // 4 3 2 1 -> 3 1 4 2
 
         LinkedHashSet<Integer> numbers = new LinkedHashSet<>();
-        while (numbers.size() != 15) {
-            int r = new Random().nextInt(15) + 1;
+        while (numbers.size() != 6) {
+            int r = new Random().nextInt(6) + 1;
             numbers.add(r);
         }
 
-        // System.out.println("numbers = " + numbers);
+        System.out.println("numbers = " + numbers);
         // ----
         // 10
         // 12
         // ---
 
-        int count = 0;
+        /*int count = 0;
         for (Integer number : numbers) {
             if (count % 2 == 0) {
                 System.out.println("---");
             }
             System.out.println(number);
             count++;
-        }
+        }*/
 
     }
 
