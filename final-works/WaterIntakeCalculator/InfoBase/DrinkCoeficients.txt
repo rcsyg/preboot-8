@@ -1,0 +1,11 @@
+Water=1
+Cofee=0.8
+Tea=0.85
+Smoothie=0.33
+Yogurt=0.5
+Soda=0.6
+Juice=0.55
+Milk=0.78
+Beer=-0.5
+Wine=-0.7
+StrongAlcohol=-1.8

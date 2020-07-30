@@ -1,0 +1,1 @@
+java -cp untitled104.jar AppLauncher

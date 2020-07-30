@@ -1,0 +1,10 @@
+moscow/Name the capital of Russia?
+riga/Name the capital of Latvia?
+paris/Name the capital of France?
+london/Name the capital of England?
+vienna/Name the capital of Austria?
+budapest/Name the capital of Hungary?
+kiev/Name the capital of Ukraine?
+stockholm/Name the capital of Sweden?
+monaco/Name the capital of Monaco?
+berlin/Name the capital of Germany?

@@ -1,0 +1,10 @@
+Welcome to the game "Field of Miracles"!
+Try to answer the question or guess a letter!
+
+* Before each turn you get random bonus - if you guess a hidden letter, you get random bonus points.
+* If you guess the word, you get extra bonus 1000 points!
+* If you make a mistake 3 times YOU LOSE!
+
+You can play again to get higher score or quit the game.
+Good luck!
+

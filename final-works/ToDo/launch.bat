@@ -1,0 +1,1 @@
+java -cp ToDoManager.jar lv.accenture.preboot.todomanager.AppLauncher
